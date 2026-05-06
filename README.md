@@ -1,15 +1,30 @@
 # Dotfiles
 
-My configs for things
+This repo manages my system configuration using Git + GNU Stow.
+- My desktop config is the main source of truth
+- My laptop specific config is on the laptop-dotfiles branch 
 
-## Required packages
+---
 
-- Git
-- Stow
+# Clone repo into dotfiles folder
 
-## Using this repo
+` git clone git@github.com:conorharkin1/Dotfiles.git ~/dotfiles `
 
-1. Create a dotfiles folder like $HOME/dotfiles
-2. git clone this repo into it
-3. cd into dotfiles
-4. run stow . 
+# Apply dotfiles
+### Go to dotfiles folder and run
+`
+stow bash config hypr wayland
+`
+
+For laptop specific config check out the laptop-dotfiles branch
+
+# Workflow for changes
+## Desktop
+- Make whatever changes to config in the dotfiles folder
+- Commit and push them to master branch
+
+## Laptop
+- Checkout the laptop-dotfiles branch (probably already is checked out)
+`git fetch origin
+- git merge origin/master
+- git push`
