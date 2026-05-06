@@ -9,8 +9,17 @@ shopt -s cdspell
 shopt -s autocd
 
 alias ls='ls --color=auto'
+alias la='ls -A'
+
 alias grep='grep --color=auto'
 alias cat='bat --paging=never'
+
+# Git aliases
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gl="git log --oneline --graph --all"
 
 
 PS1='[\u@\h \W]\$ '
