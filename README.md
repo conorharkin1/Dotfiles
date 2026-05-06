@@ -25,8 +25,9 @@ For laptop specific config check out the laptop-dotfiles branch
 
 ## Laptop
 Checkout the laptop-dotfiles branch (probably already is checked out)
-`
+
+```
 git fetch origin
 git merge origin/master
 git push
-`
+```
