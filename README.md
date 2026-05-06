@@ -24,7 +24,9 @@ For laptop specific config check out the laptop-dotfiles branch
 - Commit and push them to master branch
 
 ## Laptop
-- Checkout the laptop-dotfiles branch (probably already is checked out)
-`git fetch origin
-- git merge origin/master
-- git push`
+Checkout the laptop-dotfiles branch (probably already is checked out)
+`
+git fetch origin
+git merge origin/master
+git push
+`
