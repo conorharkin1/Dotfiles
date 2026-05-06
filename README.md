@@ -1,6 +1,8 @@
 # Dotfiles
 
 This repo manages my system configuration using Git + GNU Stow.
+- My desktop config is the main source of truth
+- My laptop specific config is on the laptop-dotfiles branch 
 
 ---
 
@@ -8,16 +10,13 @@ This repo manages my system configuration using Git + GNU Stow.
 
 ` git clone git@github.com:conorharkin1/Dotfiles.git ~/dotfiles `
 
-## My desktop config is the main source of truth
-## My laptop specific config is on the laptop-dotfiles branch 
-
 # Apply dotfiles
 ### Go to dotfiles folder and run
 `
 stow bash config hypr wayland
 `
 
-## For laptop specific config check out the laptop-dotfiles branch
+For laptop specific config check out the laptop-dotfiles branch
 
 # Workflow for changes
 ## Desktop
