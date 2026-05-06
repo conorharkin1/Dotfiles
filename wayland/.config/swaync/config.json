@@ -80,7 +80,7 @@
       "text": "Label Text"
     },
     "mpris": {
-      "show-album-art": "never"
+      "show-album-art": "always"
     },
     "volume": {
       "label": ""

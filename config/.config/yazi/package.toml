@@ -1,0 +1,12 @@
+[plugin]
+deps = []
+
+[[flavor.deps]]
+use = "dangooddd/kanagawa"
+rev = "1f3b3c7"
+hash = "16ea0ff3583131788d57d5f7d34d0f61"
+
+[[flavor.deps]]
+use = "ZimCodes/yazi-flavors:obsidian-soft-glow"
+rev = "20480a1"
+hash = "ffbdc2e8847dfe609f7dad5db97704f5"

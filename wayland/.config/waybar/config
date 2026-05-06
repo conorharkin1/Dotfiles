@@ -27,7 +27,17 @@
 
     "clock": {
         "format": "{:%d.%m.%Y | %H:%M}",
-	"tooltip": false
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
 
     "wireplumber": {
