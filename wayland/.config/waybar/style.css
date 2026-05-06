@@ -34,6 +34,7 @@
 #memory,
 #cpu,
 #clock,
+#battery,
 #custom-gpu-utilisation {
     padding-left: 1em
 }
@@ -46,6 +47,7 @@
 
 #wireplumber,
 #language,
+#bluetooth,
 #network {
     padding-right: 2em 
 }
