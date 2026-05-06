@@ -4,9 +4,9 @@
     "height": 30,
     "spacing": 5,
 
-    "modules-left": ["clock", "memory", "cpu", "custom/gpu-utilisation"],
+    "modules-left": ["clock", "memory", "cpu", "battery"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wireplumber", "network", "custom/notification"],
+    "modules-right": ["wireplumber", "bluetooth", "network", "custom/notification"],
 
     "hyprland/workspaces": {
         "format": "<span size='larger'>{icon}</span>",
