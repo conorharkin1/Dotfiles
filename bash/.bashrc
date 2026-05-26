@@ -35,3 +35,11 @@ export BAT_THEME=TwoDark
 export PATH export PATH="$PATH:/home/conor/.dotnet/tools"
 
 . /usr/share/nvm/init-nvm.sh
+export PATH="$HOME/.local/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Laravel
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
