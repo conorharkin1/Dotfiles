@@ -43,3 +43,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Laravel
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# Go
+export PATH=$PATH:/usr/local/go/bin
