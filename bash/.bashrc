@@ -46,3 +46,5 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # Go
 export PATH=$PATH:/usr/local/go/bin
+# Go install directory
+export PATH=$PATH:/home/conor/go/bin
