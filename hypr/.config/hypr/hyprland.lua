@@ -13,7 +13,14 @@ hl.monitor({
 
 hl.monitor({
     output   = "eDP-1",
-    mode     = "1920x1080@60",
+    mode     = "1920x1080@60.05600",
+    position = "auto",
+    scale    = "1",
+})
+
+hl.monitor({
+    output   = "",
+    mode     = "preferred",
     position = "auto",
     scale    = "auto",
 })
@@ -95,7 +102,7 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = "rgba(cecdca00)",
+            active_border   = "rgba(faf5efaa)",
             inactive_border = "rgba(595959aa)",
         },
 
