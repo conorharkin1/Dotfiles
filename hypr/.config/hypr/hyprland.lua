@@ -13,7 +13,7 @@ hl.monitor({
 
 hl.monitor({
     output   = "eDP-1",
-    mode     = "preferred",
+    mode     = "1920x1080@60",
     position = "auto",
     scale    = "auto",
 })
@@ -56,11 +56,11 @@ end)
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
-hl.env("LIBVA_DRIVER_NAME,nvidia")
-hl.env("__GLX_VENDOR_LIBRARY_NAME,nvidia")
-hl.env("XDG_CURRENT_DESKTOP,Hyprland")
-hl.env("XDG_SESSION_TYPE,wayland")
-hl.env("XDG_SESSION_DESKTOP,Hyprland")
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 
 
 -----------------------
@@ -95,7 +95,7 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = "rgba(206205202)"
+            active_border   = "rgba(cecdca00)",
             inactive_border = "rgba(595959aa)",
         },
 
@@ -144,7 +144,7 @@ hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1}
 hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1}     } })
 
 -- Default springs
-hl.curve("easy",           { type = "spring", mass = 1, stiffness = 238.1191, damping = 24.21279333 })
+hl.curve("easy",           { type = "spring", mass = 1, stiffness = 238.1191, dampening = 24.21279333 })
 
 hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 5.39, bezier = "easeOutQuint" })
@@ -261,12 +261,12 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + K", hl.dsp.window.close())
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(fileManager))
-hl.bind("SUPER_SHIFT + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind("SUPER + SHIFT + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-hl.bind("SUPER_SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region"))
-hl.bind("SUPER_SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
-hl.bind("SUPER_SHIFT + F", hl.dsp.window.fullscreen())
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("code"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t -sw"))
