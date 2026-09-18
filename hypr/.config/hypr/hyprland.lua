@@ -23,9 +23,9 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-$terminal = kitty
-$fileManager = kitty -e yazi
-$menu = wofi --show drun
+local terminal = kitty
+local fileManager = kitty -e yazi
+local menu = wofi --show drun
 
 
 -------------------
